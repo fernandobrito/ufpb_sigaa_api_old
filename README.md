@@ -63,6 +63,8 @@ Courses which are optional to this specific curriculum have `'semester': 0`.
 
 ## Development
 
+App is automaticly deployed to Heroku. Please don't break the build ;)
+
 ### Vocabulary (pt-BR)
 
 * Um curso (exemplo: Bacharelado em Ciência da Computação) é chamado de 'Program';
@@ -71,3 +73,4 @@ Courses which are optional to this specific curriculum have `'semester': 0`.
 * Um centro ao qual o curso pertence é chamado de 'Faculty'.
 
 ### To-do
+* Add CI integration (and activate it on Heroku)
