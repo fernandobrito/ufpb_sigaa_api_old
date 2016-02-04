@@ -65,7 +65,7 @@ Courses which are optional to this specific curriculum have `'semester': 0`.
 
 ## Development
 
-App is automaticly deployed to Heroku. Please do not break the build ;)
+App is automaticly deployed to Heroku using branch `deploy`. Please do not break the build ;)
 
 ### Vocabulary (pt-BR)
 
