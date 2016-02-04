@@ -4,9 +4,11 @@
 
 Web service to expose some data manually parsed from the academic web system (SIGAA) used on my home university (UFPB). 
 
+http://ufpb-sigaa-api.herokuapp.com/
+
 ## Technologies
 
-Developed using Sinatra. Hosted on Heroku.
+Developed using Sinatra. Hosted on Heroku. Data is stored in JSON, which were parsed from `sigaa_parser` (source not available yet).
 
 ## End points
 
