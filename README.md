@@ -25,7 +25,7 @@ Returned (in an array) when listing all curricula.
 { 
   "code": "160064",
   "program": "CIÊNCIAS DA COMPUTAÇÃO (BACHARELADO)/CI - João Pessoa - MT",
-  "faculty": "Centro de Informática",
+  "faculty": "CENTRO DE INFORMÁTICA (CI)",
   "semesters": 8
 }
 ```
@@ -55,9 +55,7 @@ Courses which are optional to this specific curriculum have `'semester': 0`.
   "semester": 2,
   "workload": "60h(4cr) aula 0h(0cr) lab.",
   "type": "DISCIPLINA",
-  "prerequisites": [
-    (other courses)
-  ]
+  "prerequisites": ["1107132", "1105421"]
 }
 ```
 
