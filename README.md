@@ -19,23 +19,23 @@ Developed using Sinatra. Hosted on Heroku. Data is stored in JSON, which were pa
 
 ### Curriculum
 
-#### Short
-Returned when listing all curricula.
+#### Short description
+Returned (in an array) when listing all curricula.
 ```
 { 
-  'code': '160064',
-  'program': 'CIÊNCIAS DA COMPUTAÇÃO (BACHARELADO)/CI - João Pessoa - MT',
-  'faculty': 'Centro de Informática',
-  'semesters': 8
+  "code": "160064",
+  "program": "CIÊNCIAS DA COMPUTAÇÃO (BACHARELADO)/CI - João Pessoa - MT",
+  "faculty": "Centro de Informática",
+  "semesters": 8
 }
 ```
 
-#### Full
+#### Full description
 Returned when viewing a specific curriculum. Same as short, plus courses and additional data. 
 ```
 { 
   (same as short),
-  'courses': [
+  "courses": [
     (see courses)
   ]
 }
@@ -49,13 +49,13 @@ Courses which are optional to this specific curriculum have `'semester': 0`.
 
 ```
 {
-  'code': '1107147',
-  'name': 'LINGUAGEM PROGRAMACAO I',
-  'category': 'Básica Profissional',
-  'semester': 2,
-  'workload': '60h(4cr) aula 0h(0cr) lab.',
-  'type': 'DISCIPLINA',
-  'prerequisites': [
+  "code": "1107147",
+  "name": "LINGUAGEM PROGRAMACAO I",
+  "category": "Básica Profissional",
+  "semester": 2,
+  "workload": "60h(4cr) aula 0h(0cr) lab.",
+  "type": "DISCIPLINA",
+  "prerequisites": [
     (other courses)
   ]
 }
@@ -65,7 +65,7 @@ Courses which are optional to this specific curriculum have `'semester': 0`.
 
 ## Development
 
-App is automaticly deployed to Heroku. Please don't break the build ;)
+App is automaticly deployed to Heroku. Please do not break the build ;)
 
 ### Vocabulary (pt-BR)
 
