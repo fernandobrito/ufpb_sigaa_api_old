@@ -62,7 +62,7 @@ Returned when viewing a specific curriculum. Same as short, plus courses and add
 ### Vocabulary (pt-BR)
 
 * Um curso (exemplo: Bacharelado em Ciência da Computação) é chamado de 'Program';
-* Um curso pode ter mais de uma estrutura curricular (mas somente uma viagem). Uma estrutura curricular é chamada de 'Curriculum'. Note que o plural é 'Curricula'; 
+* Um curso pode ter mais de uma estrutura curricular (mas somente uma vigente). Uma estrutura curricular é chamada de 'Curriculum'. Note que o plural é 'Curricula'; 
 * Uma disciplina é chamada de 'Course';
 * Um centro ao qual o curso pertence é chamado de 'Faculty'.
 
