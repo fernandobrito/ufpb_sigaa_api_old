@@ -29,7 +29,7 @@ Returned when listing all curricula.
 ```
 
 #### Full
-Returned when viewing a specific curriculum. Same as short, plus courses and additional data.
+Returned when viewing a specific curriculum. Same as short, plus courses and additional data. 
 ```
 { 
   (same as short),
@@ -41,6 +41,10 @@ Returned when viewing a specific curriculum. Same as short, plus courses and add
 
 ### Course
 
+At the moment, a course exists only in the context of a curriculum, so it has a semester and only the prerequisites of this curriculum. In the future we might want to create a more abstract course, holding the prerequisites for all curricula in which this course is present.
+
+Courses which are optional to this specific curriculum have `'semester': 0`.
+
 ```
 {
   'code': '1107147',
@@ -49,7 +53,7 @@ Returned when viewing a specific curriculum. Same as short, plus courses and add
   'semester': 2,
   'workload': '60h(4cr) aula 0h(0cr) lab.',
   'type': 'DISCIPLINA',
-  'prerequesites': [
+  'prerequisites': [
     (other courses)
   ]
 }
