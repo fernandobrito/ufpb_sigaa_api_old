@@ -7,9 +7,18 @@ get '/' do
 end
 
 namespace '/api' do
-  get '/curricula' do
-    content_type :json
+  before { content_type :json }
 
+  get '/curricula' do
     File.read('data/curricula.json')
+  end
+
+  get '/curricula/:code' do
+    begin
+      File.read("data/curricula/#{params[:code]}.json")
+    rescue
+      status 404 # Not found
+      body({ error: "Could not find any curriculum with code #{params[:code]}" }.to_json)
+    end
   end
 end
