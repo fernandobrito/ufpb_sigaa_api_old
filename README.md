@@ -15,15 +15,15 @@ Developed using Sinatra. Hosted on Heroku. Data is stored in JSON, which were pa
 | Method |          URL          |         Description         |
 |:------:|:---------------------:|:---------------------------:|
 |   GET  |     /api/curricula    | Get all curricula available (short) |
-|   GET  | /api/curricula/\<code\> |  Get curriculum with \<code\> (full) |
+|   GET  | /api/curricula/\<id\> |  Get curriculum with \<id\> (full) |
 
 ### Curriculum
 
 #### Short description
 Returned (in an array) when listing all curricula.
 ```
-{ 
-  "code": "160064",
+{
+  "id": "160064",
   "program": "CIÊNCIAS DA COMPUTAÇÃO (BACHARELADO)/CI - João Pessoa - MT",
   "faculty": "CENTRO DE INFORMÁTICA (CI)",
   "semesters": 8
@@ -49,7 +49,7 @@ Courses which are optional to this specific curriculum have `'semester': 0`.
 
 ```
 {
-  "code": "1107147",
+  "id": "1107147",
   "name": "LINGUAGEM PROGRAMACAO I",
   "category": "Básica Profissional",
   "semester": 2,
